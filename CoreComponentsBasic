@@ -1,0 +1,37 @@
+import React from 'react';
+import {View, Text, Image, ScrollView, TextInput} from 'react-native';
+
+const App = () => {
+  return (
+    <ScrollView>
+      <View>
+        <Text
+        style={{
+          padding: 20,
+          margin:20,
+          fontSize: 18,
+        }}
+        >Some more text</Text>
+        <Image
+          source={{
+            uri: 'https://tse4.mm.bing.net/th?id=OIP.efUvc7EHRuyVrmjNujR5SQHaEo&pid=Api&P=0&h=220',
+          }}
+          style={{margin:30, width: 200, height: 200}}
+        />
+      </View>
+      <TextInput
+        style={{
+          height: 40,
+          width:250,
+          padding:8,
+          fontSize : 15,
+          borderColor: 'yellowgreen',
+          borderWidth: 2,
+        }}
+        defaultValue="You Can Type Something"
+      />
+    </ScrollView>
+  );
+};
+
+export default App;
